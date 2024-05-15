@@ -21,6 +21,7 @@ import java.util.Scanner;
 public class App2 {
 
     static Scanner scanner = new Scanner(System.in);
+    static Random random = new Random();
 
     public static void main(String[] args) throws IOException {
 
@@ -39,8 +40,6 @@ public class App2 {
         }
 
         for (int y = 1; y <= x; y++) {
-
-            Random random = new Random();
             int max = 110, min = 5;
             int kmh = random.nextInt((max - min + 1) + min);
             double mph = convertKmMph(kmh);
